@@ -1,0 +1,8 @@
+[[overview]]
+= Visão geral do projeto
+:docinfo1:
+
+O projeto tem o objetivo de coletar os intrumentos de velocidade cadastrados no site do Inmetro.
+
+[IMPORTANT]
+Para realizar a coleta é necessário adicionar um banco de dados alterando as variáveis HOST_HOMOLOGACAO, USER_HOMOLOGACAO, DBNAME_HOMOLOGACAO, SENHA_HOMOLOGACAO e PORTA_HOMOLOGACAO:

@@ -1,0 +1,19 @@
+site:
+  title: Coleta Inmetro
+  # the 404 page and sitemap files only get generated when the url property is set
+  url: http://localhost:2020
+content:
+  sources:
+    - url: http://carlosalbuquerquepdi.mobitbrasil.com.br:8601/scm/dp/coleta-inmetro.git
+      branches: feature/docs
+
+asciidoc:
+  attributes:
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    page-pagination: ''
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
