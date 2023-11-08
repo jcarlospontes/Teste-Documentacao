@@ -1,4 +1,4 @@
-* xref:overview.adoc[Visão Geral]
-* xref:coleta-registros.adoc[Coleta de Registros]
-* xref:coleta-historicos.adoc[Coleta de Historicos]
-* xref:banco.adoc[Modelo de Dados]
+* xref:overview.adoc[]
+* xref:coleta-registros.adoc[]
+* xref:coleta-historicos.adoc[]
+* xref:banco.adoc[]
