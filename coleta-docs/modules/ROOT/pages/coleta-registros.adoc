@@ -1,0 +1,37 @@
+[[registros]]
+= Coleta de Registros
+
+A coleta de registros possui os seguintes parâmetros utilizados:
+
+### Endereço do POST: ###
+
+```
+https://servicos.rbmlq.gov.br/Instrumento
+```
+
+
+### JSON utilizado: ###
+```
+{
+    "SelectedTipoClassificacaoInstrumento": 322,
+    "DataInicio": "",
+    "DataFim": "",
+    "SelectedUFID": "",
+    "SelectedMunicipio": "",
+    "NumInmetro": "",
+    "NumSerie": "",
+    "Placa": "",
+    "NumeroChassi": "",
+    "Local": "",
+    "PlacaTaxi": "",
+    "SelectedMarca": {valor marca},
+    "SelectedModelo": "",
+    "Total": x,
+    "PageSize": x,
+    "ActualPage": {pagina atual}
+}
+```
+
+### Legenda: ###
+    322 -> Medidor de Velocidade
+    ActualPage -> Representa a página atual que estamos(sempre deve ser informado no POST)
