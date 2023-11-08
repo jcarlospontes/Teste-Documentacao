@@ -3,7 +3,7 @@ version: 1.0.0
 title: Coleta Inmetro
 
 nav:
-  - modules/ROOT/nav.adoc
+  - coleta-docs/modules/ROOT/nav.adoc
 ext:
   collector:
     run:
