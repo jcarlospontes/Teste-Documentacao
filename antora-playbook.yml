@@ -4,8 +4,8 @@ site:
   url: http://localhost:2020
 content:
   sources:
-    - url: http://carlosalbuquerquepdi.mobitbrasil.com.br:8601/scm/dp/coleta-inmetro.git
-      branches: feature/docs
+    - url: https://github.com/jcarlospontes/Teste-Documentacao.git
+      branches: main
 
 asciidoc:
   attributes:
