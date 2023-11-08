@@ -6,6 +6,7 @@ content:
   sources:
     - url: https://github.com/jcarlospontes/Teste-Documentacao.git
       branches: main
+      start_path: coleta-docs
 
 asciidoc:
   attributes:
