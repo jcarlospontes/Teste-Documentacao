@@ -4,10 +4,3 @@ title: Coleta Inmetro
 
 nav:
   - coleta-docs/modules/ROOT/nav.adoc
-ext:
-  collector:
-    run:
-      command: gradlew -q -PbuildSrc.skipTests=true "-Dorg.gradle.jvmargs=-Xmx3g -XX:+HeapDumpOnOutOfMemoryError" :framework-docs:generateAntoraResources
-      local: true
-    scan:
-      dir: ./build/generated-antora-resources
