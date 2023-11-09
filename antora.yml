@@ -1,6 +1,0 @@
-name: coleta
-version: 1.0.0
-title: Coleta Inmetro
-
-nav:
-  - modules/ROOT/nav.adoc
