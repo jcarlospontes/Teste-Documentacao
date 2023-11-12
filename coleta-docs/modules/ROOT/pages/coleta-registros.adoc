@@ -32,9 +32,28 @@ https://servicos.rbmlq.gov.br/Instrumento
     "ActualPage": {pagina atual}
 }
 ----
+
 .Legenda:
 [%collapsible.result]
 ====
-- 322 -> Medidor de Velocidade
-- ActualPage -> Representa a página atual que estamos(sempre deve ser informado no POST)
+* 322 -> Medidor de Velocidade
+* ActualPage -> Representa a página atual que estamos(sempre deve ser informado no POST)
 ====
+
+== Dependencias Utilizadas
+[#dependencies%autowidth%footer,stripes=hover]
+|===
+|Biblioteca |Versão
+
+|beautifulsoup4
+|^4.12.2
+
+|psycopg2
+|^2.9.9
+
+|requests
+|^2.31.0
+
+h|Total
+|3
+|===
