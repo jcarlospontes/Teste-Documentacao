@@ -5,6 +5,7 @@ A coleta de registros possui os seguintes parâmetros utilizados:
 
 == Endereço do POST:
 
+[source]
 ----
 https://servicos.rbmlq.gov.br/Instrumento
 ----
@@ -56,4 +57,69 @@ https://servicos.rbmlq.gov.br/Instrumento
 
 h|Total
 |3
+|===
+
+
+== Informações de Resposta
+[%autowidth]
+|===
+|Atributos |Descrição |HTML | Código
+
+|Número de Registros
+l|Coletar na primeira busca. 
+Se menor ou igual a 15 então apenas uma pesquisa deve bastar.
+A informação se encontra no terceiro <b>
+a|
+[,html]
+----
+<div class="pull-left grid-topo-detalhes">Exibindo registros <b>1</b> a <b>15</b> de um total de <b>77</b> encontrados.</div>
+----
+a|
+[,python]
+----
+resultados = soup.find('div', class_ = 'pull-left grid-topo-detalhes').findAll('b')[2].text.strip()
+----
+
+|Todos os Registros
+l|Possui um array com o conteúdo de todos os registros dentro de uma página
+A informação se encontra dentro da div com id "box-card-medidores"
+a|
+[,html]
+----
+<div id="box-card-medidores">
+----
+a|
+[,python]
+----
+registros = soup.find('div', {"id": "box-card-medidores"}).findAll('div', class_ = 'card')
+----
+
+|Um Registro
+l|Possui o conteúdo de apenas um registro.
+A informação se encontra em cada div com a classe "card"
+a|
+[,html]
+----
+<div class="card">
+----
+a|
+[,python]
+----
+registros = soup.find('div', {"id": "box-card-medidores"}).findAll('div', class_ = 'card')[x]
+----
+
+|Responsável
+(Empresa)
+l|Possui o nome da empresa do registro
+A informação se encontra no array 0 do span apos o caractere ":"
+a|
+[,html]
+----
+<span><b>Responsável:</b> Empresa X</span>
+----
+a|
+[,python]
+----
+registros[x].findAll('span')[0].text.strip().split(':')[1].strip()
+----
 |===
