@@ -3,15 +3,16 @@
 
 A coleta de registros possui os seguintes parâmetros utilizados:
 
-### Endereço do POST: ###
+== Endereço do POST:
 
-```
+----
 https://servicos.rbmlq.gov.br/Instrumento
-```
+----
 
 
-### JSON utilizado: ###
-```
+== JSON utilizado:
+[,json]
+----
 {
     "SelectedTipoClassificacaoInstrumento": 322,
     "DataInicio": "",
@@ -30,8 +31,10 @@ https://servicos.rbmlq.gov.br/Instrumento
     "PageSize": x,
     "ActualPage": {pagina atual}
 }
-```
-
-### Legenda: ###
-    322 -> Medidor de Velocidade
-    ActualPage -> Representa a página atual que estamos(sempre deve ser informado no POST)
+----
+.Legenda:
+[%collapsible.result]
+====
+- 322 -> Medidor de Velocidade
+- ActualPage -> Representa a página atual que estamos(sempre deve ser informado no POST)
+====
